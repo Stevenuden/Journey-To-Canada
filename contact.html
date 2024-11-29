@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your external CSS file -->
+
+    <style>
+      /* General Page Styling */
+      :root {
+        --primary-color: #929131;
+        --background-color: #154360;
+        --white: #ffffff;
+        --gray-text: #7e7b5d;
+        --input-border: #d5dbdb;
+        --shadow-color: rgba(0, 0, 0, 0.1);
+        --font-family: "Poppins", sans-serif;
+        --font-weight-bold: 700;
+        --font-weight-medium: 600;
+      }
+
+      body {
+        font-family: var(--font-family);
+        background: linear-gradient(135deg, #daf7a6, #ebf7a6);
+        color: var(--white);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      .contact-page {
+        margin: 0 auto;
+        padding: 40px 20px;
+        max-width: 1200px;
+      }
+
+      /* Header Styling */
+      .contact-header {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+      }
+
+      .contact-header h1 {
+        font-size: 2.8rem;
+        color: var(--white);
+        font-weight: var(--font-weight-bold);
+      }
+
+      .sub-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+      }
+
+      /* Contact Details Section */
+      .contact-details {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px var(--shadow-color);
+        text-align: center;
+        flex: 1 1 300px;
+        max-width: 500px;
+      }
+
+      .contact-details h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: var(--primary-color);
+        font-weight: var(--font-weight-medium);
+      }
+
+      .contact-details p {
+        font-size: 1rem;
+        color: var(--gray-text);
+      }
+
+      .social-icons{
+        margin-top: 20px;
+      }
+
+      /* Contact Form Section */
+      .contact-form-section {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 6px 15px var(--shadow-color);
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .contact-form-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        text-align: center;
+        color: var(--primary-color);
+        font-weight: var(--font-weight-medium);
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form label {
+        font-size: 1rem;
+        margin-bottom: 5px;
+        color: var(--primary-color);
+        font-weight: var(--font-weight-medium);
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 12px 15px;
+        border: 1px solid var(--input-border);
+        border-radius: 5px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+        outline: none;
+        transition: border-color 0.3s, box-shadow 0.3s;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 8px rgba(118, 112, 26, 0.3);
+      }
+
+      .contact-form textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .contact-form button {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .contact-form button:hover {
+        background-color: #acb460;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .sub-main {
+          flex-direction: column;
+        }
+
+        .contact-header h1 {
+          font-size: 2.4rem;
+        }
+
+        .contact-form-section {
+          padding: 25px;
+        }
+
+        .contact-details {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-page">
+      <header class="contact-header">
+        <h1>Contact Us</h1>
+      </header>
+
+      <main class="sub-main">
+        <!-- Contact Details Section -->
+        <section class="contact-details">
+          <h2>Get in Touch</h2>
+          <p>
+            We are here to answer your questions and help you start your journey
+            to Canada.
+          </p>
+          <p><strong>Phone:</strong> +1 (XXX) XXX-XXXX</p>
+          <p><strong>Email:</strong> contact@yourwebsite.com</p>
+          <p>
+            <strong>Office Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM
+          </p>
+
+          <div class="social-icons">
+          <h2>Connect With Us</h2>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="icon-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.telegram.org"
+              target="_blank"
+              class="icon-link"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="icon-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+          <h2>Contact Us</h2>
+          <form action="contact_process.php" method="post" class="contact-form">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Full Name"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your Email Address"
+            />
+
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone Number"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

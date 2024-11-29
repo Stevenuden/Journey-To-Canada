@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Reviews - Your Canadian Immigration Journey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Review Page Header -->
+    <header class="review-header">
+      <h1>Client Reviews & Success Stories</h1>
+      <p>
+        See how we've made dreams come true for our clients as they embark on
+        their new journeys in Canada.
+      </p>
+    </header>
+
+    <!-- Review Content Section -->
+    <section class="reviews-section">
+      <div class="review">
+        <img
+          src="Assets/family-6475821_640.jpg"
+          alt="Client Sarah L."
+          class="client-photo"
+        />
+        <blockquote>
+          “Thanks to the incredible support from this team, my transition to
+          Canada was seamless. From securing my work visa to finding a
+          community, they guided me every step of the way. I can't thank them
+          enough for making this life-changing experience stress-free and
+          exciting!”
+        </blockquote>
+        <p class="client-name">- Sarah L., Software Engineer in Toronto</p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/family-7257182_640.jpg"
+          alt="Client Ahmed R."
+          class="client-photo"
+        />
+        <blockquote>
+          “Your expertise and dedication to my case were phenomenal. I felt
+          supported throughout the process, and today, I’m studying at one of
+          the top universities in Canada. This experience has exceeded my
+          expectations, and it’s all thanks to your exceptional team.”
+        </blockquote>
+        <p class="client-name">
+          - Ahmed R., International Student in Vancouver
+        </p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/sun-7350734_640.jpg"
+          alt="Client Ahmed R."
+          class="client-photo"
+        />
+        <blockquote>
+          “Your expertise and dedication to my case were phenomenal. I felt
+          supported throughout the process, and today, I’m studying at one of
+          the top universities in Canada. This experience has exceeded my
+          expectations, and it’s all thanks to your exceptional team.”
+        </blockquote>
+        <p class="client-name">
+          - Ahmed R., International Student in Vancouver
+        </p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/venice-4286696_640.jpg"
+          alt="Client Ahmed R."
+          class="client-photo"
+        />
+        <blockquote>
+          “Your expertise and dedication to my case were phenomenal. I felt
+          supported throughout the process, and today, I’m studying at one of
+          the top universities in Canada. This experience has exceeded my
+          expectations, and it’s all thanks to your exceptional team.”
+        </blockquote>
+        <p class="client-name">
+          - Ahmed R., International Student in Vancouver
+        </p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/woman-4549327_640.jpg"
+          alt="Client Ahmed R."
+          class="client-photo"
+        />
+        <blockquote>
+          “Your expertise and dedication to my case were phenomenal. I felt
+          supported throughout the process, and today, I’m studying at one of
+          the top universities in Canada. This experience has exceeded my
+          expectations, and it’s all thanks to your exceptional team.”
+        </blockquote>
+        <p class="client-name">
+          - Ahmed R., International Student in Vancouver
+        </p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/home-based-learning-8968901_1280.png"
+          alt="Client Ahmed R."
+          class="client-photo"
+        />
+        <blockquote>
+          “Your expertise and dedication to my case were phenomenal. I felt
+          supported throughout the process, and today, I’m studying at one of
+          the top universities in Canada. This experience has exceeded my
+          expectations, and it’s all thanks to your exceptional team.”
+        </blockquote>
+        <p class="client-name">
+          - Ahmed R., International Student in Vancouver
+        </p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/family-6475821_640.jpg"
+          alt="Clients Emily and Jack T."
+          class="client-photo"
+        />
+        <blockquote>
+          “Moving our family to Canada was daunting, but your team made it feel
+          like a breeze. From the moment we reached out to you, we knew we were
+          in good hands. We are now happily settled and grateful for all the
+          support you provided along the way!”
+        </blockquote>
+        <p class="client-name">- Emily & Jack T., New Residents in Calgary</p>
+      </div>
+
+      <div class="review">
+        <img
+          src="Assets/sun-7350734_640.jpg"
+          alt="Client Maria K."
+          class="client-photo"
+        />
+        <blockquote>
+          “Choosing your services was the best decision we made. The attention
+          to detail, personalized advice, and genuine care for our journey stood
+          out. Today, I am building a career in Canada and living a dream I
+          never thought possible. Thank you for everything!”
+        </blockquote>
+        <p class="client-name">- Maria K., Entrepreneur in Montreal</p>
+      </div>
+    </section>
+
+    <!-- Blur Background -->
+    <div class="blur" id="blur"></div>
+
+    <!-- Review Form -->
+    <form
+      action="review.html"
+      method="post"
+      class="review-form"
+      id="reviewForm"
+    >
+      <button
+        type="button"
+        class="close-button"
+        aria-label="Close form"
+        onclick="closeForm()"
+      >
+        X
+      </button>
+      <h2>YOUR REVIEW</h2>
+      <label for="image">Upload your photo:</label>
+      <input type="file" name="image" id="image" required />
+
+      <label for="bio">Input your bio:</label>
+      <input type="text" name="bio" id="bio" required placeholder="Fill in this field" />
+
+      <label for="name">Input your name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        placeholder="Firstname and Surname"
+      />
+
+      <input type="submit" name="submit" id="submit" />
+    </form>
+
+    <!-- Loading Spinner -->
+    <div class="spinner" id="spinner"></div>
+
+    <!-- Review Page Footer -->
+    <footer class="review-footer">
+      <h2>Share Your Experience</h2>
+      <p>
+        We value our clients and love to hear your stories. If you’d like to
+        share your journey, we’d be honored to feature it here.
+      </p>
+      <button class="submit-review-button" onclick="showForm()">
+        Submit Your Review
+      </button>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of beautiful destinations in Canada, showcasing scenic landscapes, city views, and attractions.">
+    <meta name="keywords" content="Canada, gallery, scenic views, travel, nature, attractions">
+    <meta name="author" content="Stephen Udenwojo">
+    <title>Canada Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #242424;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            margin-top: 100px;
+            font-size: 2.5rem;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .gallery-item h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .gallery-item p {
+            padding: 0 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Explore Canada: A Visual Journey</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="Assets/banff-lake.jpg" alt="Banff Lake, Canada">
+            <h3>Banff Lake</h3>
+            <p>Discover the serene beauty of Banff National Park, home to crystal-clear lakes and stunning mountain views.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/toronto-skyline.jpg" alt="Toronto Skyline">
+            <h3>Toronto Skyline</h3>
+            <p>Experience the iconic Toronto skyline with its towering skyscrapers and views of Lake Ontario.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/vancouver-mountains.jpg" alt="Vancouver Mountains">
+            <h3>Vancouver Mountains</h3>
+            <p>Vancouver offers a breathtaking view of the mountains, making it a perfect destination for nature lovers.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/whistler-skiing.jpg" alt="Whistler Skiing">
+            <h3>Whistler Skiing</h3>
+            <p>Whistler is known for its world-class skiing, offering an unforgettable winter adventure.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/montreal-old-town.jpg" alt="Old Montreal">
+            <h3>Old Montreal</h3>
+            <p>Step back in time with the historic charm of Old Montreal, filled with cobblestone streets and classic French architecture.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/ottawa-parliament.jpg" alt="Ottawa Parliament Hill">
+            <h3>Ottawa Parliament Hill</h3>
+            <p>Visit Canada’s political heart, featuring the grand Parliament Buildings with beautiful views of the Ottawa River.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/prince-edward-island.jpg" alt="Prince Edward Island">
+            <h3>Prince Edward Island</h3>
+            <p>Relax in the peaceful surroundings of Prince Edward Island, famous for its red sand beaches and charming coastal villages.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Assets/niagara-falls.jpg" alt="Niagara Falls">
+            <h3>Niagara Falls</h3>
+            <p>The iconic Niagara Falls is one of the most famous natural wonders in the world, offering an awe-inspiring experience.</p>
+        </div>
+    </div>
+</body>
+
+</html>
